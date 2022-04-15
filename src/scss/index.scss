@@ -25,6 +25,7 @@ main {
   font-size: 15px;
 }
 
+
 * {
   box-sizing: border-box;
 }
@@ -358,6 +359,7 @@ $grid-breakpoints: (
   position: absolute;
   top: 200px;
   left: 0px;
+  transition: ease all .5s;
 }
 
 .app-image-container {
@@ -387,6 +389,7 @@ $grid-breakpoints: (
   position: absolute;
   top: 150px;
   right: 0;
+  transition: ease all .5s;
 }
 
 .app-image-right{
@@ -404,14 +407,15 @@ $grid-breakpoints: (
   filter: grayscale(0);
 }
 
-@media only screen and (max-width: 768px) {
-  .myName {
-    width: fit-content;
-    margin: auto !important;
-  }
+.card {
+  width: auto !important;
 }
 
-
+.app-grid {
+  background-image: linear-gradient( var(--light), var(--tertiary));
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
 
 @media only screen and (max-width: 576px) {
   .navLi {
@@ -424,4 +428,49 @@ $grid-breakpoints: (
 
   // let navLi-sm to be centered
 
+}
+
+@media only screen and (max-width: 768px) {
+  .myName {
+    width: fit-content;
+    margin: auto !important;
+  }
+  
+  .font-small {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .app-text {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(var(--light), var(--primary) );
+    border-radius: 0rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: ease all .5s;
+
+  }
+
+  .app-text-right {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(var(--light), var(--primary) );
+    border-radius: 0rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: ease all .5s;
+
+  }
+
+  .app-grid {
+    background-image: linear-gradient(var(--light), var(--primary) );
+  }
 }

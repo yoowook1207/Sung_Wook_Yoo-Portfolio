@@ -3,9 +3,9 @@ import React from "react";
 function Portfolio() {
     return (
         <section>
-            <div className="app-box mb-3">
+            <div className="app-box mb-4">
                 <div className= "app-image-container">
-                    <a href="https://yoowook1207.github.io/Newsify/" target="_blank">
+                    <a href="https://yoowook1207.github.io/Newsify/" target="_blank" rel="noreferrer">
                         <img className= "app-image" src={require(`../../../assets/image/Newsify.png`)} alt="NEWSIFY application" />
                     </a>
 
@@ -21,9 +21,9 @@ function Portfolio() {
                     </p>
                 </div>
             </div>
-            <div className="app-box mb-3">
+            <div className="app-box mb-4">
                 <div className= "app-image-container">
-                    <a href="https://restroom-finder.herokuapp.com/" target="_blank">
+                    <a href="https://restroom-finder.herokuapp.com/" target="_blank" rel="noreferrer">
                         <img className= "app-image-right" src={require(`../../../assets/image/Restroom-Finder_ex.png`)} alt="NEWSIFY application" />
                     </a>
 
@@ -38,21 +38,55 @@ function Portfolio() {
                     </p>
                 </div>
             </div>
-            <div className="app-box mb-3">
+            <div className="app-box">
                 <div className= "app-image-container">
-                    <a href="https://yoowook1207.github.io/Newsify/" target="_blank">
+                    <a href="https://yoowook1207.github.io/Newsify/" target="_blank"  rel="noreferrer">
                         <img className= "app-image" src={require(`../../../assets/image/Newsify.png`)} alt="NEWSIFY application" />
                     </a>
 
                 </div>
                 <div className= "app-text">
                     <div className= "d-flex justify-content-between align-items-center">
-                        <h3><strong>UPCOMING PROJECT</strong></h3>
+                        <h3><strong>UPCOMING GROUP PROJECT 3</strong></h3>
                         <div className="font-small text-end">React.js</div>
                     </div>
                     <p className="font-small">Lorem ipsum dolor sit ame, conjecture advising elite. Nuns utricle.
                     <br/><br/>Lorem ipsum dolor sit ame, conjecture advising elite. Nuns utricle. Lorem ipsum dolor sit ame, conjecture advising elite. Nuns utricle.
                     </p>
+                </div>
+            </div>
+
+            <div className="app-grid py-5 row">
+                <h3><strong>OTHER PROJECTS</strong></h3>
+                <div className="col-4">
+                    <div className="card ">
+                        <a href="https://github.com/yoowook1207/TUE-TrackUrEmployee" target="_blank"  rel="noreferrer">
+                            <img className= "app-image" src={require(`../../../assets/image/TUE.png`)} alt="TUE-TrackUrEmployee" />
+                        </a>                    
+                        <div className="card-body">
+                            <p className="card-text">TUE<br/><span className="font-small">node.js, MySQL</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-4">
+                    <div className="card ">
+                        <a href="https://github.com/yoowook1207/SNAPI" target="_blank"  rel="noreferrer">
+                            <img className= "app-image" src={require(`../../../assets/image/Snapi.png`)} alt="something" />
+                        </a>
+                        <div className="card-body">
+                            <p className="card-text">SNAPI<br/><span className="font-small">MongoDB, NOSQL</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-4">
+                    <div className="card ">
+                        <img className= "app-image" src={require(`../../../assets/image/surf.jpg`)} alt="Cs" />
+                        <div className="card-body">
+                            <p className="card-text">Project<br/><span className="font-small">Skill 1, Skill 2</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
