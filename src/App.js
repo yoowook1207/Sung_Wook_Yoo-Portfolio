@@ -6,7 +6,6 @@ import Portfolio from './components/pages/Portfolio';
 import Resume from './components/pages/Resume';
 import Home from './components/pages/Home';
 
-
 function App() {
 
   const [currentPage, setCurrentPage] = useState('Home');
@@ -30,7 +29,7 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-      <div className="App">
+      <div className="App px-3">
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
         <main>
           {renderPage()}

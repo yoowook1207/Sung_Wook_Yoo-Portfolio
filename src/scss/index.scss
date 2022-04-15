@@ -2,22 +2,27 @@
   max-width: 1500px;
   margin: auto;
 }
+
 main {
 	margin: 0 auto;
 	max-width: 90%;
   padding: 50px 30px;
 }
 :root {
-  --primary: #7275a0;
+  --primary: #b0b1c4;
   --secondary: #F3A847;
-  --tertiary: #B12704;
-  --light: #fffbe9;
+  --tertiary: #fce2bf;
+  --light: #fffdf3;
   --dark: #07184B;
   --darker: #111111;
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
 
+}
+
+.font-small {
+  font-size: 15px;
 }
 
 * {
@@ -48,14 +53,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Square Peg', cursive;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -79,7 +84,6 @@ h6 {
 }
 
 p {
-  font-size: 1.1rem;
   margin-top: 0;
 }
 
@@ -89,7 +93,7 @@ a {
   font-weight: bold;
 }
 
-a:hover {
+.myName a:hover {
   text-decoration: none;
   color: var(--dark);
 }
@@ -131,17 +135,20 @@ span[role="img"] {
   cursor: default;
 }
 
-form {
-  width: 40%;
-}
 
 input {
-  font-size: 1rem;
+  font-size: 1.25rem;
   padding: 0.25rem;
   border: 1px solid var(--dark);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
+  width: 300px;
+  font-weight: bold;
+}
+
+::placeholder {
+  font-weight: normal;
 }
 
 input:focus {
@@ -151,6 +158,10 @@ input:focus {
 
 li {
   list-style: none;
+}
+
+.list-style-on {
+  list-style:circle
 }
 
 nav a:hover {
@@ -287,12 +298,130 @@ a {
 	border-radius: 5px;
 	color: var(--primary);
 	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
-	
 }
 
-.navActive {
+.nav-bar {
+  padding: 0 !important;
+}
+
+.navActive a {
   color: var(--secondary);
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+.navLi-sm {
+  display: none;
+}
+
+.nav-ul {
+  padding: 0 !important;
+  font-family: 'Square Peg', cursive;
+  font-size: larger;
+}
+
+.nav-ul li a {
+  padding-top: 15px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.nav-ul li a:hover {
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.navLi {
+  padding:0 !important;
+  display: flex;
+  justify-content: center;
+}
+
+.myName {
+  font-family: 'Square Peg', cursive;
+}
+.app-box {
+  position: relative;
+}
+.app-text {
+  width: 500px;
+  padding: 10px;
+  background-image: linear-gradient(to left, var(--tertiary), var(--light) );
+  border-radius: 2rem;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+}
+
+.app-image-container {
+  overflow: hidden;  
+}
+
+.app-image{
+  float: right;
+  width: 1000px;
+  height: 100%;  
+  transform-origin: 65% 75%;
+  transition: transform 1s, filter .5s ease-out;
+  filter: grayscale(100%);
+    
+}
+
+.app-image:hover{
+  transform: scale(1.02);
+  filter: grayscale(0);
+}
+
+.app-text-right {
+  width: 500px;
+  padding: 10px;
+  background-image: linear-gradient(to right, var(--tertiary), var(--light) );
+  border-radius: 2rem;
+  position: absolute;
+  top: 150px;
+  right: 0;
+}
+
+.app-image-right{
+  float: left;
+  width: 1000px;
+  height: 100%;  
+  transform-origin: 65% 75%;
+  transition: transform 1s, filter .5s ease-out;
+  filter: grayscale(100%);
+    
+}
+
+.app-image-right:hover{
+  transform: scale(1.02);
+  filter: grayscale(0);
+}
+
+@media only screen and (max-width: 768px) {
+  .myName {
+    width: fit-content;
+    margin: auto !important;
+  }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  .navLi {
+    display: none;
+  }
+  .navLi-sm {
+    display: flex;
+    justify-content: center;
+  }
+
+  // let navLi-sm to be centered
+
 }

@@ -3,9 +3,13 @@ import React from "react";
 
 function Resume() {
     return (
-        <p>
-            Resume!
-        </p>
+        <section>
+            <h1>Resume</h1>
+            <p>Please click below image to download the resume.</p>
+            <a href="../../../assets/resume/Resume Sungwook Yoo.pdf" download>
+                <img className= "app-image" src={require(`../../../assets/resume/Resume.png`)} alt="NEWSIFY application" />
+            </a>
+        </section>
     )
 }
 
