@@ -7,9 +7,9 @@
   
 https://github.com/yoowook1207/Sung_Wook_Yoo-Portfolio<br />
 
-    AS AN avid traveler
-    I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-    SO THAT my account balance is accurate when I am traveling 
+    AS AN web developer applicant
+    I WANT to make a React.js based portfolio page.
+    SO THAT I can make single-page online portfolio. 
 
 
 ## Table of Contents
@@ -33,13 +33,14 @@ type following code to initiate the application on local machine<br />
 ```    
 
 ## Usage
-https://trackurmoney.herokuapp.com/
+https://sungwook-yoo-portfolio-page.herokuapp.com/
 
-    GIVEN a budget tracker without an internet connection
-    WHEN the user inputs an expense or deposit
-    THEN they will receive a notification that they have added an expense or deposit
-    WHEN the user reestablishes an internet connection
-    THEN the deposits or expenses added while they were offline are added to their transaction history and their totals are updated
+    This webpage is belong to Sung Wook Yoo
+    Home: Profile picture with self-description
+    About: Simplified resume, including education, skills and experience section
+    Portfolio: titled images of six of the applications with links to both the deployed applications and the corresponding GitHub repository
+    Resume: a link to a downloadable resume
+    Contact: a contact form with fields for a name, an email address, and a message
   
 ## License
   GNU GPL v3.0
