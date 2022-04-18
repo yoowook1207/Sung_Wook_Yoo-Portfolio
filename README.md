@@ -5,7 +5,7 @@
 
 ## Description
   
-https://github.com/yoowook1207/TrackUrMoney<br />
+https://github.com/yoowook1207/Sung_Wook_Yoo-Portfolio<br />
 
     AS AN avid traveler
     I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
