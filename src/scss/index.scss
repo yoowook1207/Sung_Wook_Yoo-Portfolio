@@ -417,6 +417,33 @@ $grid-breakpoints: (
   border-bottom-right-radius: 2rem;
 }
 
+.logo-container {
+  background-color: var(--tertiary);
+  max-width: 1500px;
+  margin: auto;
+}
+
+.logo-link {
+  width: fit-content;
+}
+
+.logo {
+  max-width: 64px;
+  margin: 5px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width:100% !important;
+  max-width: none !important;
+}
+
+.profile-pic {
+  width: 40%;
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 576px) {
   .navLi {
     display: none;
@@ -425,9 +452,6 @@ $grid-breakpoints: (
     display: flex;
     justify-content: center;
   }
-
-  // let navLi-sm to be centered
-
 }
 
 @media only screen and (max-width: 768px) {

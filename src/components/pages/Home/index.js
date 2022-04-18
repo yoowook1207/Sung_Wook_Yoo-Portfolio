@@ -3,6 +3,9 @@ import React from "react";
 function Home() {
     return (
         <section>
+            <div>
+                <img className="profile-pic" src={require(`../../../assets/profile-pic.png`)} alt="Profile picture example" />
+            </div>
             <h1>Who am I?</h1>
             <div className="my-2">
                 <p>
