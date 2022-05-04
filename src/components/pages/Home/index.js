@@ -4,7 +4,7 @@ function Home() {
     return (
         <section>
             <div>
-                <img className="profile-pic" src={require(`../../../assets/profile-pic.png`)} alt="Profile picture example" />
+                <img className="profile-pic" src={require(`../../../assets/profile-pic.png`)} alt="Profile Pic" />
             </div>
             <h1>Who am I?</h1>
             <div className="my-2">
