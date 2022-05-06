@@ -5,19 +5,19 @@ function Portfolio() {
         <section>
             <div className="app-box mb-4">
                 <div className= "app-image-container">
-                    <a href="https://yoowook1207.github.io/Newsify/" target="_blank" rel="noreferrer">
-                        <img className= "app-image" src={require(`../../../assets/image/Newsify.png`)} alt="NEWSIFY application" />
+                    <a href="https://bryss-meals.herokuapp.com/" target="_blank" rel="noreferrer">
+                        <img className= "app-image" src={require(`../../../assets/image/Bryss.png`)} alt="NEWSIFY application" />
                     </a>
 
                 </div>
                 <div className= "app-text">
                     <div className= "d-flex justify-content-between align-items-center">
-                    <h3><strong>NEWS!FY</strong></h3>
-                    <div className="font-small text-end">HTML/CSS/JavaScript</div>
+                    <h3><strong>BRYSS MEALS</strong></h3>
+                    <div className="font-small text-end">REACT/VANILLA CSS/NODE.JS MongoDB</div>
                     </div>
                     
-                    <p className="font-small">Proof of concept for news accessibility app whose purpose is to expand news consumption habits for people with difficulties with sight/reading, lack of patience for reading the news, and the desire to have a news feed not governed by algorithms but by their input choices.
-                    <br/><br/>Uses MediaStack API's Free Plan to fetch news data and the free ResponsiveVoice API to read the articles aloud.
+                    <p className="font-small"> Web-app running on React.js. A pre-made meal prep service that delivers health and tasty meals straight to user.
+                    <br/><br/>Database that user create is stored in connected MongoDB Atlas. Users can create their account, delivery address, reviews, or check out.
                     </p>
                 </div>
             </div>
@@ -38,20 +38,21 @@ function Portfolio() {
                     </p>
                 </div>
             </div>
-            <div className="app-box">
+            <div className="app-box mb-4">
                 <div className= "app-image-container">
-                    <a href="https://yoowook1207.github.io/Newsify/" target="_blank"  rel="noreferrer">
+                    <a href="https://yoowook1207.github.io/Newsify/" target="_blank" rel="noreferrer">
                         <img className= "app-image" src={require(`../../../assets/image/Newsify.png`)} alt="NEWSIFY application" />
                     </a>
 
                 </div>
                 <div className= "app-text">
                     <div className= "d-flex justify-content-between align-items-center">
-                        <h3><strong>UPCOMING GROUP PROJECT 3</strong></h3>
-                        <div className="font-small text-end">React.js</div>
+                    <h3><strong>NEWS!FY</strong></h3>
+                    <div className="font-small text-end">HTML/CSS/JavaScript</div>
                     </div>
-                    <p className="font-small">Lorem ipsum dolor sit ame, conjecture advising elite. Nuns utricle.
-                    <br/><br/>Lorem ipsum dolor sit ame, conjecture advising elite. Nuns utricle. Lorem ipsum dolor sit ame, conjecture advising elite. Nuns utricle.
+                    
+                    <p className="font-small">Proof of concept for news accessibility app whose purpose is to expand news consumption habits for people with difficulties with sight/reading, lack of patience for reading the news, and the desire to have a news feed not governed by algorithms but by their input choices.
+                    <br/><br/>Uses MediaStack API's Free Plan to fetch news data and the free ResponsiveVoice API to read the articles aloud.
                     </p>
                 </div>
             </div>
